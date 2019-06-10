@@ -18,7 +18,7 @@ html, body, .container {
     letter-spacing: 1.25rem;
     font-weight: 300;
     color: rgb(250, 250, 250);
-    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    text-shadow: 0rem 0.1rem 0.2rem rgb(39, 39, 39);
 }
 
 #occupation {
@@ -29,11 +29,15 @@ html, body, .container {
 
 .link, .icon {
     color: rgb(250, 250, 250);
-    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    text-shadow: 0rem 0.2rem 0.2rem rgb(39, 39, 39);
     transition: box-shadow 0.3s ease;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 0.2rem;
     padding: 0.4rem;
+}
+
+.icon {
+    font-size: 1.5rem;
 }
 
 .link:hover {
