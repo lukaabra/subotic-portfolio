@@ -1,0 +1,330 @@
+html, body, .container {
+    height: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    background: url("pictures/background.jpg") center center fixed;
+    background-size: cover;
+}
+
+
+/* -------------------------------------------------------HOME PAGE------------------------------------------------------------------------ */
+
+
+#title-frame {
+    margin-bottom: 12%;
+    cursor: auto;
+}
+
+#name {
+    letter-spacing: 1.25rem;
+    font-weight: 300;
+    color: rgb(250, 250, 250);
+    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+}
+
+#occupation {
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+    text-shadow: 0rem 0.05rem 0.05rem rgb(39, 39, 39);
+}
+
+.link, .icon {
+    color: rgb(250, 250, 250);
+    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    transition: box-shadow 0.3s ease;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    padding: 0.4rem;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    box-shadow: inset 0 -0.1rem 0 0 rgb(250, 250, 250), 0 1px 0 0 black;
+}
+
+
+/* --------------------------------------------------------------NARRATIVE------------------------------------------------------------ */
+
+
+.icon {
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: rgb(180, 180, 180);
+}
+
+#wrap {
+    min-height: 100%;
+    padding: 0;
+}
+
+section {
+    overflow: auto;
+    padding-bottom: 4rem;    
+}
+
+.frame-parent {
+    position: relative;
+    height: 30rem;
+    margin: 1% 0;
+}
+
+.picture-frame {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    margin: 1% 0.5%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.3rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
+}
+
+.image-overlay div {
+    box-shadow: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: none;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.image-overlay div:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0.1rem 0 0 rgb(250, 250, 250), inset 0 -0.1rem 0 0 rgba(250, 250, 250);
+}
+
+.image-text {
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+    margin-right: 1rem;
+    color: rgb(250, 250, 250);
+    letter-spacing: 0.2rem;
+    opacity: 0;
+    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    transition: opacity 0.2s ease-out;
+    font-size: 1.3rem;
+    z-index: 5;
+}
+
+.image-overlay div:hover + .image-text {
+    opacity: 1;
+}
+
+.spec-img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: -4rem; /* negative value of footer height */
+    height: 4rem;
+    clear: both;
+    padding-top: 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+footer .container {
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* -------------------------------------------------------INDIVIDUAL NARRATIVE------------------------------------------------ */
+
+.narrative-box {
+    background: rgba(50, 50, 50, 0.5);
+}
+
+.narrative-box ul {
+    padding: 0.2rem;
+    margin: 1rem 0;
+}
+
+.narrative-title {
+    padding-top: 1rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgb(250, 250, 250);
+    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    margin: auto;
+}
+
+.narrative-info {
+    color: rgb(250, 250, 250);
+    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    list-style: none;
+    padding: none;
+    margin: 0.3rem 0;
+}
+
+.movie-role {
+    color: rgb(200, 200, 200);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+}
+
+.narrative-extra-info {
+    margin: 0rem;
+}
+
+.narrative-extra-info-top {
+    margin-top: 2rem;
+}
+
+.year-and-length {
+    margin: 0.2rem 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+}
+
+.enhanced-img-frame {
+    box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.2rem;
+}
+
+.enhanced-img-frame img {
+    box-shadow: 0 0.075rem 0.3rem 0.05rem rgba(250, 250, 250, 0.3);
+    border-radius: 0.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .narrative-box {
+        margin-bottom: 1rem;
+    }
+
+    .narrative-info {
+        text-align: center;
+    }
+}
+
+/* -------------------------------------------------------------------COMMERCIAL--------------------------------------------------------------- */
+
+.embed-row {
+    margin: 1.5rem -15px;
+}
+
+.embed-responsive {
+    box-shadow: 0 0.3rem 0.5rem 0.1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .embed-responsive {
+        margin: 1.5rem auto;
+    }
+
+    .embed-row {
+        margin: 0 -15px;
+    }
+
+}
+
+/* -----------------------------------------------------------------------INFO------------------------------------------------------------- */
+
+#contact-content {
+    margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+.contact-info {
+    height: 30rem;
+    padding: 0 4rem;
+    color: rgb(240, 240, 240);
+    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    letter-spacing: 0.05rem;
+}
+
+.contact-info > div {
+    z-index: 5;
+}
+
+.contact-info-overlay {
+    height: 30rem;
+    color: rgb(250, 250, 250);
+    text-shadow: 0rem 0.1rem 0.05rem rgb(39, 39, 39);
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+
+.contact-img-frame {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    z-index: 5;
+}
+
+.contact-info-parent {
+    z-index: 5;
+}
+
+#matej-img, #contact-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(100, 92, 81, 0.2)
+}
+
+#matej-info, #info-spec {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(67, 62, 56, 0.5);
+}
+
+#matej-info {
+    top: 1rem;
+    left: 1rem;
+}
+
+#matej-img {
+    top: 2rem;
+    left: 1rem;
+}
+
+#contact-img {
+    bottom: 1rem;
+    width: 120%;
+    left: -0.5rem;
+}
+
+#info-spec {
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    #matej-img, #matej-info, #contact-img, #info-spec {
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+}
