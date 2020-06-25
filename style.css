@@ -60,6 +60,15 @@ html, body, .container {
 /*               LARGE LAPTOPS                       */
 /* --------------------------------------------------------------------------------------------------- */
 
+@media only screen and (min-width: 1450px) {
+    #wrap footer {
+        margin-top: 0;
+    }
+}
+
+/*          TODO: FIX OVERFLOW ON COMMERCIAL         */
+/*          TODO: FIX FOOTER IN HI RES         */
+
 @media only screen and (min-width: 1800px) {
     .container-fluid {
         height: 100%;
@@ -67,17 +76,22 @@ html, body, .container {
     }
 
     #name {
-        font-size: 12rem;
+        font-size: 11rem;
     }
 
     #occupation {
-        font-size: 10rem;
+        font-size: 7rem;
     }
 
     .link {
-        font-size: 5rem;
+        font-size: 4.5rem;
+    }
+
+    .nav-item {
+        font-size: 2rem;
     }
 }
+
 
 /* --------------------------------------------------------------------------------------------------- */
 /*               LARGE LAPTOPS                       */
@@ -85,15 +99,19 @@ html, body, .container {
 
 @media only screen and (min-width: 1300px) and (max-width: 1799px) {
     #name {
-        font-size: 7rem;
+        font-size: 6rem;
     }
-
     #occupation {
-        font-size: 5rem;
+
+        font-size: 4rem;
     }
 
     .link {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
     }
 }
 
@@ -127,7 +145,7 @@ html, body, .container {
 
 
 
-/* --------------------------------------------------------------NARRATIVE------------------------------------------------------------ */
+/*-----------------------------------------------------------NARRATIVE------------------------------------------------------------ */
 
 
 .icon {
@@ -140,13 +158,13 @@ html, body, .container {
 }
 
 #wrap {
+    position: relative;
     min-height: 100%;
-    padding: 0;
+    padding: 0 0 4rem 0;
 }
 
 section {
     overflow: auto;
-    padding-bottom: 4rem;    
 }
 
 .frame-parent {
@@ -208,7 +226,8 @@ section {
 }
 
 footer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     margin-top: -4rem; /* negative value of footer height */
     height: 4rem;
@@ -418,5 +437,11 @@ h4 {
         font-size: 1.5rem;
     }
 
+}
+
+@media only screen and (max-width: 350px) {
+    h4 {
+        font-size: 1.3rem;
+    }
 }
 
