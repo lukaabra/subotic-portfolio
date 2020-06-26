@@ -51,5 +51,8 @@ $(window).resize(function() {
     // Change index layout if resized to mobile
     if (window.innerWidth < 471) {
         $("#front div").addClass("h-50").removeClass("h-75").removeClass("h-25");
+    } else {
+        $("#front").children().first().addClass("h-75").removeClass("h-50");
+        $("#front").children().last().addClass("h-25").removeClass("h-50");
     }
 });
