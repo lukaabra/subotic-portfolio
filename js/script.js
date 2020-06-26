@@ -16,6 +16,11 @@ $(document).ready(function() {
     if (window.innerWidth < 768) {
         $(".index-link").addClass("text-center").removeClass("text-left").removeClass("text-right");
     }
+
+    // Change index layout on mobile
+    if (window.innerWidth < 471) {
+        $("#front div").addClass("h-50").removeClass("h-75").removeClass("h-25");
+    }
 });
   
 $(window).resize(function() {
@@ -41,5 +46,10 @@ $(window).resize(function() {
     // Center the index-links if resizing to a tablet or smaller device
     if (window.innerWidth < 768) {
         $(".index-link").addClass("text-center").removeClass("text-left").removeClass("text-right");
+    }
+
+    // Change index layout if resized to mobile
+    if (window.innerWidth < 471) {
+        $("#front div").addClass("h-50").removeClass("h-75").removeClass("h-25");
     }
 });
